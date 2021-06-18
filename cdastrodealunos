@@ -1,0 +1,21 @@
+cadastro = input('Deseja cadastrar um aluno?(S/N)')
+while(cadastro == 'S'):
+    aluno1 = input('Qual nome do aluno? ')
+    matricula = int(input('qual seu código matricula? '))
+    nota1 = float(input('Nota do primeiro bimestre: '))
+    nota2 = float(input('Nota do segundo bimestre: '))
+    nota3 = float(input('Nota do terceiro bimestre: '))
+    nota4 = float(input('Nota do quarto bimestre: '))
+    medianotas = (nota1 + nota2 + nota3 + nota4) / 4
+    if (medianotas >= 7.0):
+        medianotas = ('aprovado')
+    elif (medianotas < 7 and medianotas > 3):
+        medianotas = ('recuperação')
+    else:
+        medianotas = ('reprovado')
+    print('Aluno = {}\nMatrícula = {} '.format(aluno1, matricula))
+    print(' Nota do primeiro bimestre = {} \n Nota do segundo bimestre = {} \n Nota do terceiro bimestre = {} \n '
+          'Nota do quarto bimestre = {}'.format(nota1, nota2, nota3, nota4))
+    print(' Sua média final foi ', (nota1 + nota2 + nota3 + nota4) / 4)
+    print('status: ', medianotas)
+    cadastro = input('Deseja cadastrar um novo aluno?(S/N) ')
