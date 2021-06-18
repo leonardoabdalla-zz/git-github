@@ -1,11 +1,13 @@
 print('Cadastro de Alunos')
 cadastro = input('Deseja cadastrar um aluno?(S/N)')
 cadastro = cadastro.upper()
+cadastro = cadastro.strip()
 listaAlunos = []
 while(cadastro == 'S'):
     aluno1 = input('Qual nome do aluno? ')
     aluno1 = aluno1.capitalize()
-    matricula = int(input('qual seu código matricula? '))
+    aluno1 = aluno1.strip()
+    matricula = int(input('qual seu código de matricula? '))
     nota1 = float(input('Nota do primeiro bimestre: '))
     nota2 = float(input('Nota do segundo bimestre: '))
     nota3 = float(input('Nota do terceiro bimestre: '))
@@ -30,4 +32,15 @@ while(cadastro == 'S'):
     aluno01 += '1'
     cadastro = input('Deseja cadastrar um novo aluno?(S/N) ')
     cadastro = cadastro.upper()
+    cadastro = cadastro.strip()
 print(listaAlunos)
+
+
+
+
+
+
+
+
+
+
