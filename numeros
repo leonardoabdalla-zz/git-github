@@ -1,0 +1,14 @@
+numero = input('Digite S para iniciar ou N para parar o programa: ')
+numero = numero.upper()
+while (numero == 'S'):
+    numero = input('Digite seu numero de 0 a 999: ')
+    if len(numero) == 1:
+        print('unidade = ', numero)
+    elif len(numero) == 2:
+        print(' unidade = {}\n dezena = {}'.format(numero[1], numero[0]))
+    elif len(numero) == 3:
+        print(' unidade = {}\n dezena = {}\n centena = {}'.format(numero[2], numero[1], numero[0]))
+    elif len(numero) == 4:
+        print(' unidade = {}\n dezena = {}\n centena = {}\n milhar = {}'.format(numero[3], numero[2], numero[1], numero[0]))
+    numero = input('deseja digitar outro numero?(S/N) ')
+    numero = numero.upper()
