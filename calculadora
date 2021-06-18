@@ -1,7 +1,9 @@
 import math
 entrada = input('Deseja utilizar a calculadora? (S/N) ')
+entrada = entrada.upper()
 while ( entrada == 'S'):
     entrada = input('Deseja realizar operação simples ou equação do segundo grau? (simples/equação) ')
+    entrada = entrada.lower()
     if entrada == 'equação':
         a = int(input('Digite numero de A(x2): '))
         b = int(input('Digite o numero de B(x): '))
