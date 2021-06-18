@@ -1,6 +1,8 @@
 cadastro = input('Deseja cadastrar um aluno?(S/N)')
+cadastro = cadastro.upper()
 while(cadastro == 'S'):
     aluno1 = input('Qual nome do aluno? ')
+    aluno1 = aluno1.capitalize()
     matricula = int(input('qual seu código matricula? '))
     nota1 = float(input('Nota do primeiro bimestre: '))
     nota2 = float(input('Nota do segundo bimestre: '))
@@ -19,3 +21,4 @@ while(cadastro == 'S'):
     print(' Sua média final foi ', (nota1 + nota2 + nota3 + nota4) / 4)
     print('status: ', medianotas)
     cadastro = input('Deseja cadastrar um novo aluno?(S/N) ')
+    cadastro = cadastro.upper()
