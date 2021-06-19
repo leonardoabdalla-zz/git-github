@@ -1,0 +1,8 @@
+import random
+escolher = input('escolha um numero de 0 a 5: ')
+sorteio = random.randint(0, 5)
+if escolher == sorteio:
+    print(sorteio)
+    print('parabéns, você venceu')
+else:
+    print('O numero escolhido foi {}, infelizmente você perdeu'.format(sorteio))
